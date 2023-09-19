@@ -1,0 +1,43 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block title %}
+Home page!
+{% endblock title %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "app/index.css" %}">
+<link rel="stylesheet" href="{% static "app/post.css" %}">
+{% endblock css_files %}
+
+{% block contents %}
+
+<section id="welcome">
+    <header>
+     <img src="{% static "app/images/khanii.jpg" %}" alt="Usman's the auther of this blog!">
+     <h2 class="blog">Usman's Blog</h2>
+    </header>
+    <p>Hi, i'm usman and i love to blog about teach and world!</p>
+</section>
+
+{% comment %} <setion id=""> {% endcomment %}
+    <div id="latest-posts">
+<h2>My latest Thougts!</h2>
+<ul>
+  {% include "blogApp/include/post.html" %} 
+</ul>
+</div>
+{% comment %} </setion> {% endcomment %}
+
+<section id="about">
+    <h2>what I Do?</h2>
+    <p>I'm programmar, I love to code always and want to explore new technolgies!
+    </p>
+    <p>My goal is to keep on growing as a developer - and i could help to you do the same,</p>
+
+</section>
+
+{% endblock contents %}
+
+
+

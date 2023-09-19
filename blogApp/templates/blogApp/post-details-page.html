@@ -1,0 +1,30 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block title %}
+Post Details
+{% endblock title %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "app/post-details.css" %}">
+{% comment %} <link rel="stylesheet" href="{% static "app/post.css" %}"> {% endcomment %}
+{% endblock css_files %}
+
+{% block contents %}
+<section id="summary">
+    <h1>Post Title</h1>
+    <article>
+        {% comment %} <img src="{% static "app/images/mountains.jpg" %}" alt="Post title"> {% endcomment %}
+        <address>Usman Khan</address>
+        <div>
+            last updated on <time>Sep 19</time>
+        </div>
+    </article>
+</section>
+
+<main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusantium omnis exercitationem tenetur ipsa repellendus aliquid aut eos amet error, neque ut delectus distinctio accusamus. Repellendus dolorem laboriosam corporis cum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusantium omnis exercitationem tenetur ipsa repellendus aliquid aut eos amet error, neque ut delectus distinctio accusamus. Repellendus dolorem laboriosam corporis cum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusantium omnis exercitationem tenetur ipsa repellendus aliquid aut eos amet error, neque ut delectus distinctio accusamus. Repellendus dolorem laboriosam corporis cum!</p>
+</main>
+{% endblock %}
